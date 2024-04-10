@@ -61,3 +61,4 @@ Route::get('/pool', [App\Http\Controllers\Patterns\PoolController::class, 'index
 Route::get('/dependencyinjection', [App\Http\Controllers\Patterns\DependencyinjectionController::class, 'index'])->name('dependencyinjection');
 Route::get('/registry', [App\Http\Controllers\Patterns\RegistryController::class, 'index'])->name('registry');
 Route::get('/composite', [App\Http\Controllers\Patterns\CompositeController::class, 'index'])->name('composite');
+Route::get('/adapter', [App\Http\Controllers\Patterns\AdapterController::class, 'index'])->name('adapter');

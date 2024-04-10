@@ -2,7 +2,13 @@
 
 namespace App\DesignPatterns\Structural\Adapter;
 
-class RegionalDriver
-{
+use App\DesignPatterns\Structural\Adapter\IRegionalDriver;
 
+
+class RegionalDriver implements IRegionalDriver
+{
+    public function salaryByKilometrs($km) : int
+    {
+        return 2*$km;
+    }
 }

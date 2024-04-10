@@ -2,7 +2,13 @@
 
 namespace App\DesignPatterns\Structural\Adapter;
 
-class CityDriver
+use App\DesignPatterns\Structural\Adapter\ILocalDriver;
+
+class CityDriver implements ILocalDriver
 {
 
+    public function salaryByMount() : int
+    {
+        return 2000;
+    }
 }
